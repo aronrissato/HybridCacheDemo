@@ -1,0 +1,16 @@
+### GET Book by Id
+GET http://localhost:5031/books/1
+
+### Update Book by Id
+PUT http://localhost:5031/books/1
+Content-Type: application/json
+
+{
+  "year": 1996
+}
+
+### GET Books by Genre
+GET http://localhost:5031/genre/Fantasy/books
+
+### POST Invalidate caches
+POST http://localhost:5031/genre/Fantasy/invalidate
